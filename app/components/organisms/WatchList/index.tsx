@@ -1,9 +1,9 @@
 'use client'
 
-import MyList from '@components/molecules/MyList'
-import { removeFromWatchList } from '@store/actions/actionWatchList'
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import MyList from '../../molecules/MyList'
+import { removeFromWatchList } from '@/store/actions/actionWatchList'
 
 export default function WatchList() {
   const dispatch = useDispatch()

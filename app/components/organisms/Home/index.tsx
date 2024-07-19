@@ -1,9 +1,8 @@
 'use client'
 
-import Movie from '@components/molecules/Movie'
-import { getNowPlaying } from '@services/api/apiNowPlaying'
-import { useGetMovie } from '@services/api/NowPlaying/query'
 import React, { useEffect, useState } from 'react'
+import Movie from '../../molecules/movie'
+import { getNowPlaying } from '@/service/apinowplaying'
 
 function Home() {
   const [movies, setMovies] = useState<any[]>([])
